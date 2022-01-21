@@ -1,11 +1,29 @@
 import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import {
+  Navbar,
+  Welcome,
+  Exchange,
+  Services,
+  Footer,
+  Market,
+  News,
+} from "./components/index";
+import NewsCard from "./widgets/NewsCard";
 function App() {
   return (
-    <div className="">
-      <div className="gradient-bg-welcome  h-72"></div>
-      <div className="gradient-bg-services  h-72"></div>
-      <div className="gradient-bg-transactions  h-72"></div>
-      <div className="gradient-bg-footer  h-72"></div>
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="exchange" element={<Exchange />} />
+          <Route path="market" element={<Market />} />
+          <Route path="news" element={<News />} />
+        </Routes>
+        <Footer />
+      </div>
     </div>
   );
 }
