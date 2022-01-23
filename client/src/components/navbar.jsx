@@ -28,11 +28,11 @@ const Navbar = () => {
         {navItem.map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
-        <Link to="/market">
+        <a href="https://github.com/CEMK-SBR/Ethert--The-Cryprocurrency-Tracker-App-using-React-Tailwind-Solidity-Web3.0-Blockchain-RapidAPI">
           <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
-            Login
+            Docs
           </li>
-        </Link>
+        </a>
       </ul>
       <div className="flex relative">
         {!toggleMenu && (

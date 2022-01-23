@@ -41,15 +41,15 @@ const Services = () => (
         />
         <ServiceCard
           color="bg-[#8945F8]"
-          title="Best exchange rates"
+          title="Decentralized"
           icon={<BiSearchAlt fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="Everything is Decentralized. No one has to know or trust anyone else"
         />
         <ServiceCard
           color="bg-[#F84550]"
           title="Fastest transactions"
           icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="Fast Transaction is assured. We provide fast, smooth & secure transaction"
         />
       </div>
     </div>
